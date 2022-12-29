@@ -9,7 +9,6 @@
 .@{prefix}-typography {
   .reset;
 
-  margin-bottom: 1em;
   word-break: break-word;
   color: @typography-primary-color;
   font-family: @typography-font-family;
@@ -19,6 +18,7 @@
   &-copy {
     cursor: pointer;
     color: @brand-color;
+    display: inline-block;
     transition: color .2s linear;
     margin-inline-start: @spacer-s;
 
@@ -27,17 +27,17 @@
     }
   }
 
-  &--ellipsis {
-    max-width: 100%;
-    display: inline-block;
+  // &--ellipsis {
+  //   max-width: 100%;
+  //   display: inline-block;
 
-    &-single-line {
-      overflow: hidden;
-      white-space: nowrap;
-      vertical-align: bottom;
-      text-overflow: ellipsis;
-    }
-  }
+  //   &-single-line {
+  //     overflow: hidden;
+  //     white-space: nowrap;
+  //     vertical-align: bottom;
+  //     text-overflow: ellipsis;
+  //   }
+  // }
 
   &--disabled {
     color: @typography-disabled-color;
@@ -123,6 +123,10 @@ a.@{prefix}-typography {
     text-decoration: none;
     color: @brand-color-hover;
   }
+}
+
+div.@{prefix}-typography {
+  margin-bottom: 1em;
 }
 
 h1.@{prefix}-typography {
