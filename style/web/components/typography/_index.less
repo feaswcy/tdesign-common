@@ -1,0 +1,162 @@
+// 组件允许单个组件打包，因此默认引入公共基础样式
+
+@import "../../base.less";
+
+@import "./_var.less";
+
+@import "../../mixins/_reset.less";
+
+.@{prefix}-typography {
+  .reset;
+
+  margin-bottom: 1em;
+  word-break: break-word;
+  color: @typography-primary-color;
+  font-family: @typography-font-family;
+  font-size: @typography-font-size-default;
+  line-height: @typography-line-height-default;
+
+  &-copy {
+    cursor: pointer;
+    color: @brand-color;
+    transition: color .2s linear;
+    margin-inline-start: @spacer-s;
+
+    &:hover {
+      color: @brand-color-hover;
+    }
+  }
+
+  &--ellipsis {
+    max-width: 100%;
+    display: inline-block;
+
+    &-single-line {
+      overflow: hidden;
+      white-space: nowrap;
+      vertical-align: bottom;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &--disabled {
+    color: @typography-disabled-color;
+  }
+
+  &--success {
+    color: @typography-success-color;
+  }
+
+  &--warning {
+    color: @typography-warning-color;
+  }
+
+  &--error {
+    color: @typography-error-color;
+  }
+
+  &--secondary {
+    color: @typography-secondary-color;
+  }
+
+  code {
+    margin: @typography-code-margin;
+    color: @error-color-active;
+    background: @error-color-light;
+    border-radius: @border-radius-default;
+    padding: @typography-code-padding;
+    font-size: @font-size-s;
+    word-break: break-word;
+  }
+
+  mark {
+    background-color: @warning-color-light;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  u {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+  }
+
+  kbd {
+    margin: @typography-code-margin;
+    padding: @typography-code-padding;
+    border-radius: @border-radius-default;
+    border: 1px solid @border-level-2-color;
+    border-bottom-width: 2px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+
+    li {
+      margin-inline: @spacer-2 0;
+      margin-block: 0;
+      padding-inline: @spacer-s 0;
+      padding-block: 0;
+    }
+  }
+}
+
+a.@{prefix}-typography {
+  color: @text-color-link;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: color .2s linear;
+
+  &:hover {
+    text-decoration: none;
+    color: @brand-color-hover;
+  }
+}
+
+h1.@{prefix}-typography {
+  margin-top: 1.2em;
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-size: @typography-title-font-size-h1;
+  line-height: @typography-title-line-height-h1;
+}
+h2.@{prefix}-typography {
+  margin-top: 1.2em;
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-size: @typography-title-font-size-h2;
+  line-height: @typography-title-line-height-h2;
+}
+h3.@{prefix}-typography {
+  margin-top: 1.2em;
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-size: @typography-title-font-size-h3;
+  line-height: @typography-title-line-height-h3;
+}
+h4.@{prefix}-typography {
+  margin-top: 1.2em;
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-size: @typography-title-font-size-h4;
+  line-height: @typography-title-line-height-h4;
+}
+h5.@{prefix}-typography {
+  margin-top: 1.2em;
+  margin-bottom: .5em;
+  font-weight: 600;
+  font-size: @typography-title-font-size-h5;
+  line-height: @typography-title-line-height-h5;
+}
