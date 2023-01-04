@@ -27,17 +27,17 @@
     }
   }
 
-  // &--ellipsis {
-  //   max-width: 100%;
-  //   display: inline-block;
+  &--ellipsis {
+    max-width: 100%;
+    display: inline-block;
 
-  //   &-single-line {
-  //     overflow: hidden;
-  //     white-space: nowrap;
-  //     vertical-align: bottom;
-  //     text-overflow: ellipsis;
-  //   }
-  // }
+    &-single-line {
+      overflow: hidden;
+      white-space: nowrap;
+      vertical-align: bottom;
+      text-overflow: ellipsis;
+    }
+  }
 
   &--disabled {
     color: @typography-disabled-color;
@@ -109,6 +109,10 @@
       padding-inline: @spacer-s 0;
       padding-block: 0;
     }
+  }
+
+  p {
+    margin-bottom: 1em;
   }
 }
 
